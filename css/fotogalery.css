@@ -1,0 +1,191 @@
+/* @font-face {
+    font-family: Wandering Pencil;
+    src: url('/webfontkit-20200411-080840/wandering_pencil-webfont.woff2') format(woff2);
+    src: url('/webfontkit-20200411-080840/wandering_pencil-webfont.woff') format(woff);
+ }*/
+
+ 
+@font-face {
+    font-family: 'wandering_pencil_demoregular';
+    src: url('wandering_pencil-webfont.woff2') format('woff2'),
+         url('wandering_pencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-size: 1em;
+    font-family: wandering_pencil-webfont;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%vh;
+    font-family:'wandering_pencil-webfont';
+}
+
+.total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 70px;
+    background-color: silver;
+}
+
+.item {
+margin: 10px;
+width: 360px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+background-color: white;
+margin-top: 15px;
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
+img {
+    width: 330px;
+    height: 360px;
+    padding: 15px;
+}
+
+p {
+    text-align: center;
+    font-size: x-large
+}
+ 
+.item:nth-child(1) {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+
+    transition: all 1s;
+}
+
+.item:nth-child(1):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+
+.item:nth-child(2) {
+    filter: contrast(150%)  sepia(150%) drop-shadow(2px 2px 5px);
+    -webkit-filter: contrast(150%)  sepia(150%) drop-shadow(2px 2px 5px);
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 0px 0px 5px brown;
+    background-color: moccasin;
+    transition: all 1s;
+}
+
+
+.item:nth-child(2)#foto:hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    text-shadow: none;
+    background-color: white;
+    transition: all 1s;
+}
+
+.item:nth-child(3) {
+    filter: opacity(30%);
+    -webkit-filter: opacity(30%);
+    transition: all 1s;
+}
+
+.item:nth-child(3):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+.item:nth-child(2n+4) {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    transition: all 1s;
+}
+
+.item:nth-child(2n+4):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+
+.item:nth-child(3n+5) {
+    filter: contrast(150%);
+    -webkit-filter: contrast(150%);
+    transition: all 1s;
+}
+
+.item:nth-child(3n+5):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+
+.item:nth-child(6) {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    transition: all 1s;
+}
+
+.item:nth-child(6):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+
+.item:nth-child(7) {
+    filter: saturate(300%);
+    -webkit-filter: saturate(300%);
+    transition: all 1s;
+    font-style: oblique;
+}
+
+.item:nth-child(7):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+
+.item:nth-child(8) {
+    filter: drop-shadow(2px 3px 5px black) ;
+    -webkit-filter: drop-shadow(2px 3px 5px black) ;
+    transition: all 1s;
+}
+.item:nth-child(8) p {
+    text-shadow: 2px 2px 3px black;
+}
+
+.item:nth-child(8):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s;
+}
+
+#foto8:hover p:hover {
+      text-shadow: none;
+}
+
+.item:nth-child(9) {
+    filter: grayscale(75%);
+    -webkit-filter: grayscale(75%);
+    font-style: italic;
+    transition: all 1s;
+}
+   
+.item:nth-child(9):hover {
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    font-style: normal;
+    transition: all 1s;
+}
