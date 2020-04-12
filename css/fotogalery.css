@@ -1,16 +1,17 @@
-/* @font-face {
+ /* *@font-face { 
     font-family: Wandering Pencil;
-    src: url('/webfontkit-20200411-080840/wandering_pencil-webfont.woff2') format(woff2);
-    src: url('/webfontkit-20200411-080840/wandering_pencil-webfont.woff') format(woff);
- }*/
+    src: url(/webfontkit/wandering_pencil-webfont.woff2) format(woff2);
+    src: url(/webfontkit/wandering_pencil-webfont.woff)  format(woff);
+  }*/
 
  
-@font-face {
+  @font-face {
     font-family: 'wandering_pencil_demoregular';
     src: url('wandering_pencil-webfont.woff2') format('woff2'),
          url('wandering_pencil-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 :root {
