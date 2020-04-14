@@ -1,14 +1,8 @@
- /* *@font-face { 
-    font-family: Wandering Pencil;
-    src: url(/webfontkit/wandering_pencil-webfont.woff2) format(woff2);
-    src: url(/webfontkit/wandering_pencil-webfont.woff)  format(woff);
-  }*/
-
  
   @font-face {
     font-family: 'wandering_pencil_demoregular';
-    src: url('wandering_pencil-webfont.woff2') format('woff2'),
-         url('wandering_pencil-webfont.woff') format('woff');
+    src: url('../webfontkit/wandering_pencil-webfont.woff2') format('woff2'),
+         url('../webfontkit/wandering_pencil-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,13 +10,8 @@
 
 :root {
     font-size: 1em;
-    font-family: wandering_pencil-webfont;
+    font-family: 'wandering_pencil_demoregular';
     box-sizing: border-box;
-}
-
-body {
-    height: 100%vh;
-    font-family:'wandering_pencil-webfont';
 }
 
 .total {
@@ -43,7 +32,6 @@ background-color: white;
 margin-top: 15px;
 margin-left: 20px;
 margin-right: 20px;
-
 }
 
 img {
